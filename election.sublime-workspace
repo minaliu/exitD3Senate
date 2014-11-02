@@ -1,0 +1,703 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ax",
+				"axisTextAdjust"
+			],
+			[
+				"text",
+				"textAdjust"
+			],
+			[
+				"mar",
+				"marginleft"
+			],
+			[
+				"margin",
+				"marginleft"
+			],
+			[
+				"upd",
+				"updateType"
+			],
+			[
+				"ma",
+				"marginleft"
+			],
+			[
+				"year",
+				"yearAdjust"
+			],
+			[
+				"x",
+				"xAdjust"
+			],
+			[
+				"update",
+				"updateLabel"
+			],
+			[
+				"transit",
+				"transitionCheck"
+			],
+			[
+				"transi",
+				"transitionCheck"
+			],
+			[
+				"data",
+				"dataYear"
+			],
+			[
+				"xA",
+				"xAdjust"
+			],
+			[
+				"width",
+				"widthScale"
+			],
+			[
+				"bar",
+				"barwidth"
+			],
+			[
+				"axis",
+				"axisHeight"
+			],
+			[
+				"opa",
+				"opacityTest"
+			],
+			[
+				"select",
+				"selectAll"
+			],
+			[
+				"X",
+				"xAxis"
+			],
+			[
+				"d3",
+				"d3Axis"
+			],
+			[
+				"del",
+				"delayTimer"
+			],
+			[
+				"delay",
+				"delayTimer"
+			],
+			[
+				"dataset_",
+				"dataset_raw"
+			],
+			[
+				"dataset_raw",
+				"dataset_raw_nested"
+			],
+			[
+				"interact",
+				"interactive_bars"
+			],
+			[
+				"in",
+				"interactive_bars"
+			],
+			[
+				"parse",
+				"parseDate"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"My",
+				"Myanmar"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"Art",
+				"articleData"
+			],
+			[
+				"ar",
+				"articleData"
+			],
+			[
+				"article",
+				"articledata"
+			],
+			[
+				"landing",
+				"landingButtons"
+			],
+			[
+				"do",
+				"doFirst"
+			],
+			[
+				"progr",
+				"progressBar"
+			],
+			[
+				"moz",
+				"moz-box"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"tex",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "election",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"clor",
+				"Color Picker"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"coor",
+				"Color picker"
+			],
+			[
+				"pick",
+				"Color picker"
+			],
+			[
+				"picker",
+				"Color picker"
+			],
+			[
+				"color pi",
+				"Color picker"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"col",
+				"Package Control: List Packages"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Install 	",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"Better CoffeeScript",
+			"Install Package",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"Install Package",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/quarterfunds.csv",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice/ACS_12_5YR_B01003_with_ann.csv",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/datadriven.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_d35.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/scripts/pipeline.js",
+		"/Users/SamPetulla/Google Drive/Employment/Jobs/Past part-time and freelance/GA/data/readme.md",
+		"/Users/SamPetulla/Google Drive/Employment/Jobs/Past part-time and freelance/GA/data/ga.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/app.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/style/style.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/codeportfolio.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/canvasd3_5.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_d32.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/style/style_pipeline.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/style/stylecanvas.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/style/styled3.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_d30.html",
+		"/Users/SamPetulla/Library/Application Support/Sublime Text 3/Packages/User/base16-ocean.light (SL).tmTheme",
+		"/Users/SamPetulla/Library/Application Support/Sublime Text 3/Packages/User/base16-eighties.dark (SL).tmTheme",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/crunchbase.json",
+		"/Users/SamPetulla/Google Drive/Employment/Jobs/Past part-time and freelance/Contently.org/ironpipeline/scripts/pipeline2.js",
+		"/Users/SamPetulla/Google Drive/Employment/Jobs/Past part-time and freelance/Contently.org/ironpipeline/style/style.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice2/makefile",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/aboutlong.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice2/us-atlas/node_modules/d3/src/geo/orthographic.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/wnyc/tags.html",
+		"/Users/SamPetulla/Desktop/wnyc.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/wnyc/wnyc.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/wnyc/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/ipy02_text.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/wnyc",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/canvasd3_3.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/header.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/readme.md",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/articles.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/ipy03_text.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice2/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/home.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/aboutmini.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice2/makefile2",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice/makefile",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/newfile.txt",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/statesinvestments_dataframe.csv",
+		"/Users/SamPetulla/Downloads/us-1.geojson",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/censusdata.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/tilemill_test.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/nav.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/longlat_temp.csv",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/canvasd3_4.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_d33.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/canvasd3_text.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice/package.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/mappractice/.gitignore",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/canvasd3_radial.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadrivensaved.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/crunchbaseapp.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/ipy01_text.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/style/type.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/style/style.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/articles.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/crunchbase2.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/datacrunchad.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/datacrunchbio.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/datacrunchclean.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/datacrunchsoftware.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/canvas.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/yearlyworksheet.csv",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_d34.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/data/articles.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/cleantech_items.csv",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/yearlyfundingvc.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/test.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/views/nav.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/views/item1.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/views/header.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/style/stylecanvas.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/app.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/views/canvasview.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-projects-portfolio/canvas.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/2013.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_d31.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/canvasd3.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_ipy2.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_ipy1.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/code.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/data.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/header_mobile.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/data/nav.json",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/datadriven_ipy0.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/scripts/bootstrap.min.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/appbackup.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/appbackup2.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/angular-reading/readme.md",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/media.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/myanmar.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/canvasd3_text.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/canvasd3_bars.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/canvasmap.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/canvas.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/politics.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/chartsbot/readme.md",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/about.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/webicons/webicon-blogger.svg",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/home.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/key.txt",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/twitter-social-miner/readme.me",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/twitter-social-miner/readme",
+		"/Users/SamPetulla/Google Drive/Employment/keypublic.txt",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/maptest.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/d3.sublime-workspace",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/views/citibike.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/chartsbot/README",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/repos/key",
+		"/Users/SamPetulla/Downloads/citibike.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/spcom/myanmartest.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/stack.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/iPython, d3/snippets.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/app/views/appview.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/app/views/about.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/index.html",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/Style/style.css",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/app/routes.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/app/vendor/angular.min.js",
+		"/Users/SamPetulla/Dropbox/Dropbox/Sites/Sampetulla.com/new/app/views/article.Myanmar.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"axis",
+			"tip",
+			"barw",
+			"textAdjust",
+			"xadjust",
+			"marginleft",
+			"axis",
+			"domain",
+			"teal",
+			"xadjust",
+			"yearadjus",
+			"xadjust",
+			"opacity",
+			"barwidth",
+			"true')",
+			"true",
+			"typeof",
+			"date",
+			"parseDate",
+			"barelect",
+			"class",
+			"scale",
+			"xadjust",
+			"offsetbar",
+			"opacityTest",
+			"xadjust",
+			"line",
+			"test",
+			"delay",
+			"durationdelay",
+			"duration",
+			"delay",
+			"datayea",
+			"text",
+			"right",
+			"thedata",
+			"data",
+			"pre",
+			"550",
+			"min",
+			"slider_title",
+			"chart_title",
+			"pipeline_interac",
+			"largest",
+			"chartwellbottom",
+			"chartwelltop",
+			"theapp",
+			"interac",
+			"theapp",
+			"tick",
+			"text-ancho",
+			"$",
+			"margin",
+			"bartips",
+			"window",
+			"charttext",
+			"barcontain",
+			"yearbutton",
+			"transition",
+			"duration",
+			"header_mobile",
+			"entity_con",
+			"politics_deta",
+			"center",
+			"nav_con",
+			"mapbox",
+			"jquery",
+			"04000US01",
+			"B06011002",
+			"first",
+			"topoj",
+			"first",
+			"city of new",
+			"container",
+			"center",
+			"hover",
+			"citylines",
+			"na",
+			"NA",
+			"null",
+			"legend",
+			"ng-app",
+			"chart1312a6c1482e6",
+			"append",
+			"margin-rig",
+			"yearbu",
+			"hover",
+			"cursor",
+			"15",
+			"raw",
+			"dataset",
+			"datayear",
+			"marginleft",
+			"datayear",
+			"console.log",
+			"updatedata",
+			"barsdiv",
+			"console.",
+			"console",
+			"console/",
+			"dataset",
+			"console",
+			"nan",
+			"x",
+			"right",
+			"center",
+			"nav_con",
+			"header_deskt",
+			"about_deta",
+			"svg",
+			"enter",
+			"console",
+			"bars",
+			"here",
+			"image",
+			".p",
+			"radial",
+			"radial_text2",
+			"article_subtitle",
+			"details",
+			"about_det",
+			"width:100%",
+			"1024",
+			"nav_container",
+			"png",
+			"border",
+			"subtitle",
+			"nav"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"(0,1,2.99e+06]\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "election",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "election.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/Dropbox/Languages/HTML5/YouTube 6 hr/new.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

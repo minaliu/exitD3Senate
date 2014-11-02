@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<style>
+
+@font-face {
+    font-family: "NeueHaasGroteskTextPro-55Roman";
+    src: url(fonts/NeueHaasGroteskTextPro-55Roman/7aebf5fd-c3c9-42e2-aba1-d48afa53803a-1.ttf),
+     url(fonts/NeueHaasGroteskTextPro-55Roman/7aebf5fd-c3c9-42e2-aba1-d48afa53803a-2.eot);
+}
+
+@font-face {
+    font-family: "NeueHaasGroteskTextPro-56Italic";
+    src: url(fonts/NeueHaasGroteskTextPro-56Italic/15d52708-a813-4604-8dc3-92a5abbed999-1.ttf),
+     url(fonts/NeueHaasGroteskTextPro-56Italic/15d52708-a813-4604-8dc3-92a5abbed999-2.eot);
+}
+
+@font-face {
+    font-family: "NeueHaasGroteskTextPro-75Bold";
+    src: url(fonts/NeueHaasGroteskTextPro-75Bold/ac8d1d1e-6331-44d0-9811-09788fb4916b-1.ttf),
+     url(fonts/NeueHaasGroteskTextPro-75Bold/ac8d1d1e-6331-44d0-9811-09788fb4916b-2.eot);
+}
+
+
+.q0-9,.q1-9,.q2-9,.q3-9,.q4-9,.q5-9,.q6-9,.q7-9,.q8-9,.q9-9 {
+	spape-rendering:crispEdges;
+	stroke: #4d4d4d;
+	stroke-width:1;
+	opacity:1; }
+
+.q0-9,.q1-9,.q2-9,.q3-9,.q4-9,.q5-9,.q6-9,.q7-9,.q8-9,.q9-9:hover {cursor: pointer;}
+
+.q4-9 { fill:rgb(247,251,255); }
+.q3-9 { fill:rgb(198,219,239); }
+.q2-9 { fill:rgb(107,174,214); }
+.q1-9 { fill:rgb(33,113,181); }
+.q0-9 { fill:rgb(8,48,107); }
+
+.q5-9 { fill:rgb(255,66,59); }
+.q6-9 { fill:rgb(255,17,7); }
+.q7-9 { fill:rgb(237,9,0); }
+.q8-9 { fill:rgb(186,7,0); }
+.q9-9 { fill:rgb(161,6,0); }
+
+#header{height:280px;}
+#head{height:75px;text-align:center;}
+#main{border:1px solid #999999;}
+#main,#mainleft,#mainright{height:320px;}
+#mainleft,#mainright{display:inline-block; vertical-align: top;}
+#mainlefthead{height:130px; display:block; float:left; vertical-align: top;}
+#mainleftheadl, #mainleftheadr{height:130px; display:inline-block; vertical-align: top; padding-top:20px;}
+#mainleftcanvas{height:190px; display:block; float:left;}
+
+#turnouthead{height:109px;border-bottom:1px solid #999999;vertical-align: bottom;display:table-cell;}
+#turnoutboxl,#turnoutboxr{display:inline-block;height:240px;padding-top:0px;vertical-align:top;}
+
+#key1head{height:109px;border-bottom:1px solid #999999;vertical-align: bottom;display:table-cell;}
+#key1boxl,#key1boxr{display:inline-block;height:240px;padding-top:20px;vertical-align:top;}
+#key2boxl,#key2boxr{display:inline-block;height:225px;margin-top:15px;margin-bottom:100px;vertical-align:top;}
+
+/* All headlines */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  letter-spacing:normal;
+  color: #dfdfdf; }
+  
+h1 { line-height: 28px; font-size: 25px; font-weight:900;}
+h2 { font-size: 18px;font-weight:400;}
+h3 { font-size: 15px;}
+/* Labels or numbers */
+h4 { font-size: 13px;}
+
+/* Paragraphs */
+h5,p {line-height: 18px;font-size: 13px; font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;}
+p { font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+p.source { 
+font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 15px;
+  color: #999999;
+  font-size: 11px; }
+
+/* Source + credits */
+h6 {
+  font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 15px;
+  color: #999999;
+  font-size: 11px;}
+h6 a:link {color:#999999;}
+
+body{background-color: #333333;}
+
+.button {
+  font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  color: #999999;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right:28px;
+  background-color: #333333;
+  border: 2.5px solid #999999;
+  cursor: pointer;
+}
+
+.button:hover {
+	color: #ffffff;
+	background-color: #999999; }
+
+.button:active, .active {
+  color: #ffffff;
+  background-color: #999999; }
+
+.button:focus {
+  color: #ffffff;
+  background-color: #999999; }
+
+.button:target {
+  color: #ffffff;
+  background-color: #999999; }
+
+textarea:focus, input:focus{
+ outline: 0;
+}
+#countyTip{
+	
+  pointer-events: none;
+	padding:18px;
+	background: #f5f5f5;
+	
+  border: 1px solid #333333;
+}
+
+</style>
+
+<body>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+	<script src="http://d3js.org/queue.v1.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="./scripts/d3.tip.v0.6.3.js"></script>
+
+	<script src="./scripts/box.js"></script>
+</body>
+</html>
