@@ -1,0 +1,5 @@
+SetEnvIf Origin "^(.*\.msnbc\.com)$" ORIGIN_SUB_DOMAIN=$1
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+  Header set Access-Control-Allow-Origin "%{ORIGIN_SUB_DOMAIN}e" env=ORIGIN_SUB_DOMAIN
+  Header append Vary Origin
+</FilesMatch>

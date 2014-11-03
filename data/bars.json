@@ -1,37 +1,58 @@
-[ {
+[{
     "State":"Georgia",
-        "R":"47.2",
-        "D":"48.2"
+    "type":"percent",
+    "candidate":"D",
+    "D":"48.2"
+    },
+    {
+    "State":"Georgia",
+    "type":"percent2",
+    "candidate":"R",
+    "D":"45.2"
     },
     {
     "State":"Kansas",
-        "R":"47.2",
-        "D":"48.2"
-   },
+    "type":"percent",
+    "candidate":"D",
+    "D":"44.9"
+    },
     {
-    "State":"Iowa",
-        "R":"47.2",
-        "D":"48.2"
-   },
-    {
-    "State":"Carolina",
-        "R":"47.2",
-        "D":"48.2"
-   },
+    "State":"Kansas",
+    "type":"percent2",
+    "candidate":"R",
+    "D":"49.2"
+    },
+    {"State":"Kentucky",
+    "type":"percent",
+    "candidate":"D",
+    "D":"43.2"
+    },
     {
     "State":"Kentucky",
-        "R":"47.2",
-        "D":"48.2"
-   }
+    "type":"percent2",
+    "candidate":"R",
+    "D":"55.2"
+    },
+    {"State":"Iowa",
+    "type":"percent",
+    "candidate":"D",
+    "D":"43.2"
+    },
+    {
+    "State":"Iowa",
+    "type":"percent2",
+    "candidate":"R",
+    "D":"51.2"
+    },
+    {"State":"Carolina",
+    "type":"percent",
+    "candidate":"D",
+    "D":"47.2"
+    },
+    {
+    "State":"Carolina",
+    "type":"percent2",
+    "candidate":"R",
+    "D":"42.2"
+    }
 ]
-
-
-    Kansas:'49.3',
-    Iowa:'45.3',
-    Carolina:'38.9',
-    Kentucky:'42.2' },
-
-     Kansas:'49.5',
-    Iowa:'41.2',
-    Carolina:'49.3',
-    Kentucky:'53.3' 
