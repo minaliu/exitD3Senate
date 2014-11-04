@@ -25,26 +25,26 @@
 	},
 	{
 		"Poll":"Poll1",
-		"ValueD2010":"6",
-		"ValueR2010":"24",
-		"ValueD2014":"76",
-		"ValueR2014":"43",
+		"ValueD2010":"36",
+		"ValueR2010":"44",
+		"ValueD2014":"26",
+		"ValueR2014":"23",
 		"State":"Kentucky"
 	},
 	{
 		"Poll":"Poll2",
 		"ValueD2010":"46",
-		"ValueR2010":"05",
-		"ValueD2014":"65",
-		"ValueR2014":"10",
+		"ValueR2010":"55",
+		"ValueD2014":"55",
+		"ValueR2014":"70",
 		"State":"Kentucky"
 	},
 	{
 		"Poll":"Poll3",
-		"ValueD2010":"6",
+		"ValueD2010":"55",
 		"ValueR2010":"65",
-		"ValueD2014":"6",
-		"ValueR2014":"15",
+		"ValueD2014":"67",
+		"ValueR2014":"60",
 		"State":"Kentucky"
 	},
 	{

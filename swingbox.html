@@ -24,36 +24,40 @@
 
 
 .r0-9,.r1-9,.r2-9,.r3-9,.r4-9,.d0-9,.d1-9,.d2-9,.d3-9,.d4-9 {
-	shape-rendering:crispEdges;
+	shape-rendering:geometricPrecision;
 	stroke: #333333;
 	stroke-width:.5;
+	visibility: visible;
 	opacity:1; 
-  	stroke-linejoin: round;}
+	stroke-antialiasing:true;
+  	stroke-linejoin:round;}
 
 .r0-9,.r1-9,.r2-9,.r3-9,.r4-9,.d0-9,.d1-9,.d2-9,.d3-9,.d4-9:hover {cursor: pointer;}
 
-.d4-9 { fill:#acceea; }
-.d3-9 { fill:#66a2df; }
-.d2-9 { fill:#3385d5; }
-.d1-9 { fill:#0066cc; }
-.d0-9 { fill:#004d99; }
+.r4-9 { fill:#acceea; }
+.r3-9 { fill:#66a2df; }
+.r2-9 { fill:#3385d5; }
+.r1-9 { fill:#0066cc; }
+.r0-9 { fill:#004d99; }
 
-.r0-9 { fill:rgb(255,66,59); }
-.r1-9 { fill:rgb(255,17,7); }
-.r2-9 { fill:rgb(237,9,0); }
-.r3-9 { fill:rgb(186,7,0); }
-.r4-9 { fill:rgb(161,6,0); }
+.r5-9 { fill:#ec9fb5; }
+.r6-9 { fill:#e16f8d; }
+.r7-9 { fill:#d74167; }
+.r8-9 { fill:#ce1140; }
+.r9-9 { fill:#ae1e37; }
 
-#header{height:220px;}
-#head{height:75px;text-align:center;}
-#main{border:1px solid #999999;}
-#main,#mainleft,#mainright{height:320px;}
+#headline{height:50px;vertical-align: bottom;display:table-cell;border-bottom:1px solid #999999}
+#header{margin-bottom:50px;}
+#head{height:70px;text-align:center;padding-top:25px;}
+#main{};
+#main,#mainleft,#mainright{height:280px;}
 #mainleft,#mainright{display:inline-block; vertical-align: top;}
-#mainlefthead{height:140px; display:block; float:left; vertical-align: top;}
-#mainleftheadl, #mainleftheadr{height:90px; display:inline-block; vertical-align: top; padding-top:55px;}
+#mainlefthead{height:85px; display:block; float:left; vertical-align: top;}
+#mainleftheadl { height:80px; display:inline-block; vertical-align:middle; }
+#mainleftheadr{height: 70px; padding-top:8px; display:inline-block; vertical-align:middle;}
 #mainleftcanvas{height:170px; display:block; float:left;}
 
-#turnouthead{height:109px;border-bottom:1px solid #999999;vertical-align: bottom;display:table-cell;}
+#turnouthead{height:50px;vertical-align: bottom;display:table-cell;}
 #turnoutboxl,#turnoutboxr{display:inline-block;vertical-align:top;}
 #turnoutboxl{height:280px;padding-bottom:20px;}
 #turnoutboxr{height:300px;}
@@ -62,10 +66,17 @@
 #key1boxl,#key1boxr{display:inline-block;height:225px;margin-top:25px;vertical-align:top;}
 #key2boxl,#key2boxr{display:inline-block;height:225px;margin-top:15px;margin-bottom:100px;vertical-align:top;}
 
-
+.headshotImg{
+	height:75px;
+	width:auto;
+}
 .barResultsT,.barResultsT2{fill:white;font-size: 13px;
 font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;}
-
+.resultsCan{
+	color:white;
+	font-size: 15px;
+font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 /* All headlines */
 h1,h2,h3,h4,h5,h6 {
   font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -81,7 +92,7 @@ h4 { font-size: 13px;}
 
 /* Paragraphs */
 h5,p {line-height: 18px;font-size: 13px; font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;}
-p { font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif; }
+p { color: #FFF;}
 
 p.source { 
 font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -101,12 +112,14 @@ body{background-color: #333333;}
 
 .button {
   font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #999999;
-  height: 40px;
+  height: 45px;
   padding-left: 10px;
   padding-right: 10px;
   margin-right:28px;
+  padding-top:10px;
+  padding-bottom:10px;
   background-color: #333333;
   border: 2.5px solid #999999;
   cursor: pointer;
@@ -134,25 +147,69 @@ textarea:focus, input:focus{
 
 .resultsPercent{
   font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
-  line-height: 28px; font-size: 25px; font-weight:900;color: #dfdfdf;}
+  line-height: 28px; font-size: 25px; font-weight:500;color: #dfdfdf;}
 .resultsCan{}
 
 .turnoutCircles{}
 
+.turnoutYearsText1,.turnoutYearsText2{
+ font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;
+ line-height: 15px;
+ fill: #999;
+ font-size: 10px; }
+
+.turnoutPollsText{
+font-size: 15px; 
+font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;
+fill: #999999;
+font-weight:900;
+}
+
 /* tip */
 #countyTip{
   pointer-events: none;
-	padding:18px;
-	background: #f5f5f5;
-  border: 1px solid #333333;
+	padding:20px;
+	width:250px;
+    background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #999999;
+  
 }
-#tipTop{
-	
+#tipTopR{
+	display:inline-block; 
+	text-align:right;
+	width:60px !important;
+	padding-bottom:5px;
+	border-bottom: 1px solid #787878;
 }
+#tipTop{height:20px;}
+#tipTopL{display:inline-block;padding-right:20px; width:calc(100% - 80px);
+padding-bottom:5px;
+	border-bottom: 1px solid #787878;
+	}
 
-#tipMid{}
+#tipBottom{height:35px;padding-top:5px;}
+#tipBottomL{ display:inline-block; padding-right:20px; text-align:left;vertical-align:middle; width:calc(100% - 80px)}
+#tipBottomR{display:inline-block;width:60px; text-align:right;vertical-align:middle;}
 
-#tipBottom{ text-align:right;}
+#tip2BottomL{ display:inline-block; text-align:left;vertical-align:top; padding-top:4px;width:40px;}
+#tip2BottomM{ display:inline-block;text-align:right;vertical-align:middle; width:calc(100% - 80px);}
+#tip2BottomR{display:inline-block;text-align:right;vertical-align:middle; width:40px;}
+
+.tipFeature{font-size:13px; color:#787878;
+font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.tipSample{font-size:10px; color:#787878;
+font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.tipCanNameD{font-size:12px; color:#004d99; font-weight: 400;line-height: 18px;
+font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.tipCanNameR{font-size:12px; color:#ae1e37; font-weight: 400;line-height: 18px;
+font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.tipPctD{font-size:16px; color:#004d99; font-weight: 400;
+font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.tipPctR{font-size:16px; color:#ae1e37; font-weight: 400;
+font-family: "NeueHaasGroteskTextPro-75Bold","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.tipYear{font-size:12px; color:#787878; font-weight:500;
+font-family: "NeueHaasGroteskTextPro-55Roman","Helvetica Neue",Helvetica,Arial,sans-serif;	
+}
 
 /* charts */
 .axis text {
@@ -160,12 +217,7 @@ textarea:focus, input:focus{
   font:10px;
   fill:#9b9b9b;
 }
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #9b9b9b;
-  shape-rendering: crispEdges;
-}
+
 
 
 .key1Line {
