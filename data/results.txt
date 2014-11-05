@@ -1,0 +1,22 @@
+
+var resultsIn = {
+    Georgia:'90',
+    Kansas:'94',
+    Iowa:'95',
+    Carolina:'99',
+    Kentucky:'99' 
+}
+
+var resultsRV = {
+    Georgia:'52.8',
+    Kansas:'53.3',
+    Iowa:'52.2',
+    Carolina:'49.0',
+    Kentucky:'56.2' }
+
+var resultsDV = {
+    Georgia:'45.3',
+    Kansas:'42.5',
+    Iowa:'43.7',
+    Carolina:'47.3',
+    Kentucky:'40.7' }

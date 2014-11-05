@@ -1,122 +1,152 @@
 [
 	{
 		"Poll":"Poll1",
-		"ValueD2010":"6",
-		"ValueR2010":"15",
-		"ValueD2014":"60",
+		"ValueD2010":"54",
+		"ValueR2010":"42",
+		"OffYearNameD":"Martin",
+		"OffYearNameR":"Chambliss",
+		"ValueD2014":"53",
 		"ValueR2014":"45",
 		"State":"Georgia"
 	},
 	{
 		"Poll":"Poll2",
-		"ValueD2010":"6",
-		"ValueR2010":"15",
-		"ValueD2014":"75",
-		"ValueR2014":"45",
+		"ValueD2010":"0",
+		"ValueR2010":"0",
+		"OffYearNameD":"Martin",
+		"OffYearNameR":"Chambliss",
+		"ValueD2014":"57",
+		"ValueR2014":"42",
 		"State":"Georgia"
 	},
 	{
 		"Poll":"Poll3",
-		"ValueD2010":"67",
-		"ValueR2010":"25",
-		"ValueD2014":"68",
-		"ValueR2014":"40",
+		"ValueD2010":"51",
+		"ValueR2010":"41",
+		"OffYearNameD":"Martin",
+		"OffYearNameR":"Chambliss",
+		"ValueD2014":"61",
+		"ValueR2014":"37",
 		"State":"Georgia"
+	},
+	{
+		"Poll":"Poll1",
+		"ValueD2010":"49",
+		"ValueR2010":"51",
+		"OffYearNameD":"Conway",
+		"OffYearNameR":"Paul",
+		"ValueD2014":"47",
+		"ValueR2014":"50",
+		"State":"Kentucky"
+	},
+	{
+		"Poll":"Poll2",
+		"ValueD2010":"86",
+		"ValueR2010":"13",
+		"OffYearNameD":"Conway",
+		"OffYearNameR":"Paul",
+		"ValueD2014":"90",
+		"ValueR2014":"8",
+		"State":"Kentucky"
+	},
+	{
+		"Poll":"Poll3",
+		"ValueD2010":"47",
+		"ValueR2010":"52",
+		"OffYearNameD":"Conway",
+		"OffYearNameR":"Paul",
+		"ValueD2014":"42",
+		"ValueR2014":"53",
+		"State":"Kentucky"
+	},
+	{
+		"Poll":"Poll1",
+		"ValueD2010":"55",
+		"ValueR2010":"41",
+		"OffYearNameD":"Hagan",
+		"OffYearNameR":"Dole",
+		"ValueD2014":"54",
+		"ValueR2014":"42",
+		"State":"Carolina"
+	},
+	{
+		"Poll":"Poll2",
+		"ValueD2010":"96",
+		"ValueR2010":"1",
+		"OffYearNameD":"Hagan",
+		"OffYearNameR":"Dole",
+		"ValueD2014":"96",
+		"ValueR2014":"3",
+		"State":"Carolina"
+	},
+	{
+		"Poll":"Poll3",
+		"ValueD2010":"74",
+		"ValueR2010":"22",
+		"OffYearNameD":"Hagan",
+		"OffYearNameR":"Dole",
+		"ValueD2014":"47",
+		"ValueR2014":"44",
+		"State":"Carolina"
+	},
+	{
+		"Poll":"Poll1",
+		"ValueD2010":"41",
+		"ValueR2010":"56",
+		"OffYearNameD":"Slattery",
+		"OffYearNameR":"Roberts",
+		"ValueD2014":"46",
+		"ValueR2014":"50",
+		"State":"Kansas"
+	},
+	{
+		"Poll":"Poll2",
+		"ValueD2010":"0",
+		"ValueR2010":"0",
+		"OffYearNameD":"Slattery",
+		"OffYearNameR":"Roberts",
+		"ValueD2014":"54",
+		"ValueR2014":"43",
+		"State":"Kansas"
+	},
+	{
+		"Poll":"Poll3",
+		"ValueD2010":"0",
+		"ValueR2010":"0",
+		"OffYearNameD":"Slattery",
+		"OffYearNameR":"Roberts",
+		"ValueD2014":"54",
+		"ValueR2014":"43",
+		"State":"Kansas"
 	},
 	{
 		"Poll":"Poll1",
 		"ValueD2010":"36",
-		"ValueR2010":"44",
-		"ValueD2014":"26",
-		"ValueR2014":"23",
-		"State":"Kentucky"
-	},
-	{
-		"Poll":"Poll2",
-		"ValueD2010":"46",
-		"ValueR2010":"55",
-		"ValueD2014":"55",
-		"ValueR2014":"70",
-		"State":"Kentucky"
-	},
-	{
-		"Poll":"Poll3",
-		"ValueD2010":"55",
-		"ValueR2010":"65",
-		"ValueD2014":"67",
-		"ValueR2014":"60",
-		"State":"Kentucky"
-	},
-	{
-		"Poll":"Poll1",
-		"ValueD2010":"6",
-		"ValueR2010":"24",
-		"ValueD2014":"76",
-		"ValueR2014":"43",
-		"State":"Carolina"
-	},
-	{
-		"Poll":"Poll2",
-		"ValueD2010":"46",
-		"ValueR2010":"25",
-		"ValueD2014":"65",
-		"ValueR2014":"10",
-		"State":"Carolina"
-	},
-	{
-		"Poll":"Poll3",
-		"ValueD2010":"6",
-		"ValueR2010":"15",
-		"ValueD2014":"6",
-		"ValueR2014":"15",
-		"State":"Carolina"
-	},
-	{
-		"Poll":"Poll1",
-		"ValueD2010":"6",
-		"ValueR2010":"24",
-		"ValueD2014":"76",
-		"ValueR2014":"43",
-		"State":"Kansas"
-	},
-	{
-		"Poll":"Poll2",
-		"ValueD2010":"46",
-		"ValueR2010":"25",
-		"ValueD2014":"65",
-		"ValueR2014":"10",
-		"State":"Kansas"
-	},
-	{
-		"Poll":"Poll3",
-		"ValueD2010":"6",
-		"ValueR2010":"15",
-		"ValueD2014":"6",
-		"ValueR2014":"15",
-		"State":"Kansas"
-	},
-	{
-		"Poll":"Poll1",
-		"ValueD2010":"6",
-		"ValueR2010":"24",
-		"ValueD2014":"26",
-		"ValueR2014":"29",
+		"ValueR2010":"62",
+		"OffYearNameD":"Conlin",
+		"OffYearNameR":"Grassley",
+		"ValueD2014":"49",
+		"ValueR2014":"48",
 		"State":"Iowa"
 	},
 	{
 		"Poll":"Poll2",
-		"ValueD2010":"46",
-		"ValueR2010":"25",
-		"ValueD2014":"65",
-		"ValueR2014":"10",
+		"ValueD2010":"88",
+		"ValueR2010":"10",
+		"OffYearNameD":"Conlin",
+		"OffYearNameR":"Grassley",
+		"ValueD2014":"0",
+		"ValueR2014":"0",
 		"State":"Iowa"
 	},
 	{
 		"Poll":"Poll3",
-		"ValueD2010":"6",
-		"ValueR2010":"35",
-		"ValueD2014":"6",
-		"ValueR2014":"85",
+		"ValueD2010":"35",
+		"ValueR2010":"64",
+		"OffYearNameD":"Conlin",
+		"OffYearNameR":"Grassley",
+		"ValueD2014":"51",
+		"ValueR2014":"45",
 		"State":"Iowa"
 	}
 ]

@@ -1,17 +1,9 @@
 
-//choropleth
-//+data update for tooltips
-//legend
-
-//research
-//chart
-
+//names of candidates earlier years
+//yellow on the independent page.
+//Async?/queuing
 //mobile
-//text
-//Indpendent candidate
-//put up 'as of date' info
 
-//state value object literals
 var stAb = {
     Georgia:'GA',
     Kansas:'KS',
@@ -77,91 +69,93 @@ var sRCansLast = {
     Carolina:'Tillis',
     Kentucky:'McConnell' };
 
-//some results hardcoded for non-constant updates
 var sWins = {
-    Georgia:'D',
+    Georgia:'R',
     Kansas:'R',
     Iowa:'R',
-    Carolina:'D',
+    Carolina:'R',
     Kentucky:'R' };
 
 var resultsIn = {
-    Georgia:'90.1',
-    Kansas:'90.2',
-    Iowa:'90.3',
-    Carolina:'90.4',
-    Kentucky:'90.5' 
+    Georgia:'90',
+    Kansas:'94',
+    Iowa:'95',
+    Carolina:'99',
+    Kentucky:'99' 
 }
 
 var resultsRV = {
-    Georgia:'47.2',
-    Kansas:'49.3',
-    Iowa:'45.3',
-    Carolina:'38.9',
-    Kentucky:'42.2' }
+    Georgia:'52.8',
+    Kansas:'53.3',
+    Iowa:'52.2',
+    Carolina:'49.0',
+    Kentucky:'56.2' }
 
 var resultsDV = {
-    Georgia:'48.2',
-    Kansas:'42.2',
-    Iowa:'41.2',
-    Carolina:'49.3',
-    Kentucky:'53.3' }
+    Georgia:'45.3',
+    Kansas:'42.5',
+    Iowa:'43.7',
+    Carolina:'47.3',
+    Kentucky:'40.7' }
 
 var turnoutText = {
-    Georgia:'Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary ',
-    Kansas:'Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary ',
-    Iowa:'Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary ',
-    Carolina:'North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary ',
-    Kentucky:'Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary '
+    Georgia:'Election day is over, and the Republicans have taken control of the Senate for the first time since 2006. From the young to racial minorities, here is a look at the changing faces of voters and what it could mean for 2016 and beyond.',
+    Kansas:'Election day is over, and the Republicans have taken control of the Senate for the first time since 2006. From the young to racial minorities, here is a look at the changing faces of voters and what it could mean for 2016 and beyond.',
+    Iowa:'Election day is over, and the Republicans have taken control of the Senate for the first time since 2006. From the young to racial minorities, here is a look at the changing faces of voters and what it could mean for 2016 and beyond.',
+    Carolina:'Election day is over, and the Republicans have taken control of the Senate for the first time since 2006. From the young to racial minorities, here is a look at the changing faces of voters and what it could mean for 2016 and beyond.',
+    Kentucky:'Election day is over, and the Republicans have taken control of the Senate for the first time since 2006. From the young to racial minorities, here is a look at the changing faces of voters and what it could mean for 2016 and beyond.'
 }
 
-var keyText1 = {
-    Georgia:'Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary ',
-    Kansas:'Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary ',
-    Iowa:'Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary ',
-    Carolina:'North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary ',
-    Kentucky:'Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary '
+
+var InT2010 = {
+    Kentucky:{0:"50",1:"6",2:"2"},
+    Kansas:{0:"51",1:"4",2:"10"},
+    Iowa:{0:"49",1:"3",2:"6"},
+    Carolina:{0:"54",1:"19",2:"9"},
+    Georgia:{0:"52",1:"3",2:"7"},
 }
-var keyText2 = {
-    Georgia:'Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary Georgia Turnout Summary ',
-    Kansas:'Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary Kansas Turnout Summary ',
-    Iowa:'Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary Iowa Turnout Summary ',
-    Carolina:'North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary North Carolina Turnout Summary ',
-    Kentucky:'Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary Kentucky Turnout Summary '
+
+var InT2014 = {
+    Kentucky:{0:"49",1:"8",2:"6"},
+    Kansas:{0:"51",1:"6",2:"6"},
+    Iowa:{0:"51",1:"2",2:"6"},
+    Carolina:{0:"53",1:"21",2:"6"},
+    Georgia:{0:"52",1:"4",2:"5"},
 }
+
 
 var Poll1Names = {
-    Kentucky:{0:"Seniors",1:"Christians",2:"Gun Rights Advocates"},
-    Kansas:{0:"Poll 1 KS",1:"Poll 2 KS",2:"Poll 3 KS"},
-    Iowa:{0:"Poll 1 IA",1:"Poll 2 IA",2:"Poll 3 IA"},
-    Carolina:{0:"Poll 1 NC",1:"Poll 2 NC",2:"Poll 3 NC"},
-    Georgia:{0:"Women",1:"Seniors",2:"Hispanics"},
+    Kentucky:{0:"Female",1:"Black",2:"Age 18-24"},
+    Kansas:{0:"Female",1:"Hispanic or Latino",2:"Age 18-24"},
+    Iowa:{0:"Female",1:"Black",2:"Age 18-24"},
+    Carolina:{0:"Female",1:"Black",2:"Age 18-24"},
+    Georgia:{0:"Female",1:"Hispanic or Latino",2:"Age 18-24"},
 }
 
-var InT = {
-    Kentucky:{0:"10",1:"24",2:"50"},
-    Kansas:{0:"11",1:"28",2:"32"},
-    Iowa:{0:"14",1:"34",2:"65"},
-    Carolina:{0:"18",1:"45",2:"74"},
-    Georgia:{0:"22",1:"42",2:"75"},
+var PollChoices = {
+    0:"Foreign Policy",
+    1:"Health Care",
+    2:"The Economy",
+    3:"Illegal Immigration",
+    4:"Other/No Response" 
 }
 
-var Poll3Names = {
-    Georgia:"Poll 3 GA",
-    Kansas:"Poll 3 KS",
-    Iowa:"Poll 3 IA",
-    Carolina:"Poll 3 CA",
-    Kentucky:"Poll 3 KY"
+var prioritiesColors ={
+    1:"#cbc9e2",
+    2:"#7d77b7",
+    3:"#b1add4",
+    4:"#5e5989",
+    5:"#555"
+
 }
 
-var Poll2Names = {
-    Georgia:"Poll 2 GA",
-    Kansas:"Poll 2 KS",
-    Iowa:"Poll 2 IA",
-    Carolina:"Poll 2 CA",
-    Kentucky:"Poll 2 KY"
+var pollYear = {
+     Georgia: "2008",
+    Iowa: "2008",
+    Kansas: "2010",
+    Carolina: "2010",
+    Kentucky: "2008"
 }
-
 
 var windowwidth = $( window ).width();
 var totalwidth = 0.8 * windowwidth;
@@ -171,42 +165,8 @@ var introText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 
 var box = d3.select("body").append("div").attr("id","box").style("width",totalwidth + 'px').style("margin-left",totalwidth*0.1 + 'px');
 
-    var headline = d3.select("#box").append("div").attr("id","headline").style("width",totalwidth + 'px').html("<h1>Battle for the Senate</h1>");
-    var header = d3.select("#box").append("div").attr("id","header").html("<p>" + introText + "</p>");
-
-
-            var leftwidth = totalwidth*.40;
-            var svgleftwidth = leftwidth;
-
-    var main = d3.select("#box").append("div").attr("id","main").style("width",totalwidth + 'px');
-
-
-    var mainright = d3.select("#main").append("div").attr("id","mainright").style("width",width + 'px');
-            var width = 0.60 * totalwidth,
-                height = 280;
-            var svg = d3.select("#mainright").append("svg")
-                .attr("width", width)
-                .attr("height", height);
-            svg.append("rect")
-                .attr("width", "100%")
-                .attr("height", "99%")
-                .attr("fill", "#333333");
-
-        var mainleft = d3.select("#main").append("div").attr("id","mainleft").style("width",leftwidth + 'px');
-        var mainlefthead = d3.select("#mainleft").append("div").attr("id","mainlefthead").style("width",leftwidth + 'px');
-            var mainleftheadl = d3.select("#mainlefthead").append("div").attr("id","mainleftheadl").style("width",95 + 'px');
-            var mainleftheadr = d3.select("#mainlefthead").append("div").attr("id","mainleftheadr").style("width",((totalwidth*.40)-95) + 'px');
-        var mainleftcanvas = d3.select("#mainleft").append("div").attr("id","mainleftcanvas").style("width",leftwidth + 'px');
-             var svgL = d3.select("#mainleftcanvas").append("svg")
-                .attr("width", svgleftwidth + 'px')
-                .attr("height", "170px");
-                svgL.append("rect")
-                    .attr("width", "99%")
-                    .attr("height", "99%")
-                    .attr("fill", "#333333");
-            //var    ;
-
-        
+        var leftwidth = totalwidth*.40;
+        var svgleftwidth = leftwidth;
 
     var head = d3.select("#box").append("div").attr("id","head").style("width",totalwidth + 'px');
         var button1 = d3.select("#head").append("input").attr("type","button").attr("class","button").attr('value','Georgia')
@@ -221,7 +181,7 @@ var box = d3.select("body").append("div").attr("id","box").style("width",totalwi
             .on("click", function() { updateState('Carolina'); });
 
         var turnoutW = totalwidth*.70;
-        var turnouthead = d3.select("#box").append("div").attr("id","turnouthead").style("width",totalwidth + 'px');
+        //var turnouthead = d3.select("#box").append("div").attr("id","turnouthead").style("width",totalwidth + 'px');
         var turnoutboxl = d3.select("#box").append("div").attr("id","turnoutboxl").style("width",totalwidth*.30 + 'px');
         var turnoutboxr = d3.select("#box").append("div").attr("id","turnoutboxr").style("width",turnoutW + 'px').html("&nbsp");
             var svgTurnout = d3.select("#turnoutboxr").append("svg")
@@ -233,61 +193,98 @@ var box = d3.select("body").append("div").attr("id","box").style("width",totalwi
                     .attr("height", "99%")
                     .attr("fill", "#333333");
 
-        var keyW = totalwidth *.5;
-        var key1head = d3.select("#box").append("div").attr("id","key1head").style("width",totalwidth + 'px').html("<H1>TK</h1>");
-        /*var key1boxl = d3.select("#box").append("div").attr("id","key1boxl").style("width",totalwidth*.50 + 'px');
-        var key1boxr = d3.select("#box").append("div").attr("id","key1boxr").style("width",keyW + 'px').html("&nbsp");
-            var svgKey1 =  d3.select("#key1boxr").append("svg")
-                    .attr("width",keyW)
-                    .attr("height","225px");
+    var main = d3.select("#box").append("div").attr("id","main").style("width",totalwidth + 'px');
+    var width = 0.60 * totalwidth,
+                height = 250;
+    var boxwidth = 325;
+    var boxcolorwidth = 42;
+    var boxtextwidth = 100;
+    var boxtextwidth2 = 42;
+     var boxtextwidth3 = 20;
+    var mainright = d3.select("#main").append("div").attr("id","mainright").style("width",width + 'px');
+        var mainrightt = d3.select("#mainright").append("div").attr("id","mainrightt").style("width",width + 'px');
+            var mainrighttbox = d3.select("#mainrightt").append("div").attr("id","mainrighttbox").style("width",boxwidth + 'px');
+                d3.select("#mainrighttbox").append("div").attr("class","boxwhitetext").style("width",boxtextwidth + 'px').text('Democrats');
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#acceea");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#66a2df");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#3385d5");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#0066cc");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#004d99");
 
-            svgKey1.append("rect")
-                .attr("width", "99%")
+                d3.select("#mainrighttbox").append("div").attr("class","boxwhitetext").style("width",boxtextwidth + 'px').text('Republicans');
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#ec9fb5");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#e16f8d");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#d74167");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#ce1140");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#ae1e37");
+
+                d3.select("#mainrighttbox").append("div").attr("class","boxwhitetext").style("width",boxtextwidth + 'px').text('Independents');
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#fdde92");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#f7cd66");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#f4bc33");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#f0ac00");
+                d3.select("#mainrighttbox").append("div").attr("class","boxcolors").style("width",boxcolorwidth + 'px').style("background-color","#ee9200");
+
+                d3.select("#mainrighttbox").append("div").attr("class","boxgreytext1").style("width",boxtextwidth + 'px').text('Vote Share of Winner');
+                d3.select("#mainrighttbox").append("div").attr("class","boxgreytext1").style("width",boxtextwidth3 + 'px');
+                d3.select("#mainrighttbox").append("div").attr("class","boxgreytext").style("width",1+boxtextwidth2 + 'px').text('50%');
+                d3.select("#mainrighttbox").append("div").attr("class","boxgreytext").style("width",1+boxtextwidth2 + 'px').text('60%');
+                d3.select("#mainrighttbox").append("div").attr("class","boxgreytext").style("width",1+boxtextwidth2 + 'px').text('70%');
+                d3.select("#mainrighttbox").append("div").attr("class","boxgreytext").style("width",1+boxtextwidth2 + 'px').text('80%');
+                
+        var mainrightb = d3.select("#mainright").append("div").attr("id","mainrightb").style("width",width + 'px');
+            var svg = d3.select("#mainrightb").append("svg")
+                .attr("width", width)
+                .attr("height", height);
+            svg.append("rect")
+                .attr("width", "100%")
                 .attr("height", "99%")
-                .attr("fill", "black");
+                .attr("fill", "#333333");
 
+        var mainleft = d3.select("#main").append("div").attr("id","mainleft").style("width",leftwidth + 'px');
+        var mainlefthead = d3.select("#mainleft").append("div").attr("id","mainlefthead").style("width",leftwidth + 'px');
+            var mainleftheadl = d3.select("#mainlefthead").append("div").attr("id","mainleftheadl").style("width",95 + 'px');
+            var mainleftheadr = d3.select("#mainlefthead").append("div").attr("id","mainleftheadr").style("width",((totalwidth*.40)-95) + 'px');
+        var mainleftcanvas = d3.select("#mainleft").append("div").attr("id","mainleftcanvas").style("width",leftwidth + 'px');
 
-        var key2boxl = d3.select("#box").append("div").attr("id","key2boxl").style("width",totalwidth*.50 + 'px');
-        var key2boxr = d3.select("#box").append("div").attr("id","key2boxr").style("width",keyW + 'px').html("&nbsp");
-            var svgKey2 =  d3.select("#key2boxr").append("svg")
-                .attr("width",keyW)
-                .attr("height","225px");
-
-             svgKey2.append("rect")
+             var svgL = d3.select("#mainleftcanvas").append("svg")
+                .attr("width", svgleftwidth + 'px')
+                .attr("height", "170px");
+                svgL.append("rect")
                     .attr("width", "99%")
                     .attr("height", "99%")
-                    .attr("fill", "black");*/
+                    .attr("fill", "#333333");
 
-    //var keys = d3.select("#box").append("div").attr("id","keys").style("width",totalwidth + 'px');
+        var barW = totalwidth *.80;
+        var legendW = totalwidth *.20;
+        var key1head = d3.select("#box").append("div").attr("id","key1head").style("width",totalwidth + 'px');
+
+        var key1legend = d3.select("#box").append("div").attr("id","key1legend").style("width",legendW + 'px').html("<img src=\"./data/legend.png\" height=\"90px\"\">");
+            
+
+        d3.select("#box").append("div").attr("id","key1bars").style("width",barW + 'px');
+            var svgKeys = d3.select("#key1bars").append("svg")
+                .attr("width",barW)
+                .attr("height","120px")
+
+                svgKeys.append("text").attr("class","barpct1").attr("x","1").attr("y",54).text('0%')
+                svgKeys.append("text").attr("class","barpct2").attr("x",barW - 30).attr("y",54).text('100%')
+
+    d3.select("#box").append("div").attr("id","key1text").style("width",totalwidth + 'px').text("Source: NBC Election");
+    
+//globals
     var barHeight = 22;
     var offsetBar = 160;
 
-    var pollTicks = ["Hispanics","Women","White 65+"];
-    var formatTicks = function(d) {
-        return pollTicks[d];      
-    }
+    var offsetCircle2014 = 40;
+    var turnoutLeftPad = turnoutW * 0.10;
+    var turnoutSpacing = (turnoutW - 20 + (turnoutLeftPad)) / 3;
 
-    var offsetCircle2014 = 60;
-    var turnoutLeftPad = turnoutW * 0.08;
-    var turnoutSpacing = (turnoutW + (turnoutLeftPad)) / 3;
-
-
-
-    //ticks.tickSize(innerTickHeight, 0)
-
-    var xTurn = d3.scale.ordinal()
-        .domain(pollTicks)
-        .rangeRoundBands([turnoutLeftPad/2, (turnoutLeftPad*2 + + offsetCircle2014 + (turnoutSpacing*2))], .1);
-
-    var xAxis = d3.svg.axis()
-        .orient("bottom").outerTickSize(0)
-        .scale(xTurn);
-
-    //console.log(turnoutSpacing);
-    //console.log(turnoutLeftPad)
 
     var parseDate = d3.time.format("%d-%b-%y").parse;
-    var rateById = d3.map();
+    
+    var rateByIdD = d3.map();
+    var rateByIdPct = d3.map();
 
     var map,
         filePath,
@@ -298,7 +295,7 @@ var box = d3.select("body").append("div").attr("id","box").style("width",totalwi
         senD,
         senR,
         winningCan,
-        winningPercent,
+        winningPercent,prefData,
         losingCan,
         losingPercent,
         barsArray,
@@ -315,11 +312,25 @@ var box = d3.select("body").append("div").attr("id","box").style("width",totalwi
         senW,
         kT,
         line1,
-        line2;
+        line2,
+        foundD,
+        foundR,
+        pollYear,
+        nestedByState, barStack, barsSGroup, a2, b2, c2, d2, e2;
 
 
 function updateState(stateChoice){
 
+   
+
+
+
+    var tipNameSpan, tipPctSpan;
+             if(stateChoice == "Kansas"){
+               tipNameSpan = "tipCanNameI";
+               tipPctSpan = "tipPctI";
+            }  else {
+        tipNameSpan = "tipCanNameD"; tipPctSpan = "tipPctD";}
 
     var starD = "";
     var starR = "";
@@ -333,7 +344,6 @@ function updateState(stateChoice){
 
     stateAb = stAb[stateChoice];
     senD = sDCans[stateChoice];
-    winningParty == "D" ? starD = "* " : starR = "* ";
 
     senDLast = sDCansLast[stateChoice];
     senR = sRCans[stateChoice]; 
@@ -344,19 +354,136 @@ function updateState(stateChoice){
         winningCan = sRCans[stateChoice]; 
         winningPercent = resultsRV[stateChoice];
         senW = senR;
-        //losingCan = sDCans[stateChoice];
-        //losingPercent = resultsDV[stateChoice];
     } else {
         winningPercent = resultsDV[stateChoice];
         winningCan = sDCans[stateChoice];
         senW = senD;
-        //losingCan = sRCans[stateChoice];
-        //losingPercent = resultsRV[stateChoice];
     }
+      var dataCSVf;
+
+    (function updateKeyPoints() {
+        
+        //update pattern
+        d3.csv("./data/senatew.csv", 
+            function(keyDataset) {
+
+                dataCSV = keyDataset;
+                dataCSVf = dataCSV.filter(function(d){return d.state == stateAb});
+                //console.log(keyDataset);
+
+                nestedByState = d3.nest()
+                    .key((function (d) {
+                        return d.key;
+                    }))
+                    .map(dataCSVf, d3.map);
+        });
+
+        d3.json("./data/preferences.json", function(preference){
+
+            prefData = preference.filter(function(d){return d.state == stateChoice});
+
+            //make legend
+            //update text below
+            var scale = d3.scale.linear()
+                    .domain([0, 100])
+                    .range([0, barW]);
+
+            barStack = svgKeys.selectAll("g")
+                .data(prefData, function(d){return d.type});
+
+            barsSGroup = barStack.enter().append("g");
+            barsSGroup.append("rect").attr("class","bar1");
+            barsSGroup.append("rect").attr("class","bar2");
+            barsSGroup.append("rect").attr("class","bar3");
+            barsSGroup.append("rect").attr("class","bar4");
+            barsSGroup.append("rect").attr("class","bar5");
+
+            tipStack0 = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,z) { return ("<div id=\"priorityTip\"><div id=\"turntipLeft\"><span class=\"tipFeature\">" + PollChoices[z] + "</span></div><div id=\"turntipRight\"><span class=\"tipPercentGrey\">"  + d.Option1 + "%</span></div></div>")});
+            tipStack1 = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,z) { return ("<div id=\"priorityTip\"><div id=\"turntipLeft\"><span class=\"tipFeature\">" + PollChoices[z] + "</span></div><div id=\"turntipRight\"><span class=\"tipPercentGrey\">"  + d.Option2 + "%</span></div></div>")});  
+            tipStack2 = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,z) { return ("<div id=\"priorityTip\"><div id=\"turntipLeft\"><span class=\"tipFeature\">" + PollChoices[z] + "</span></div><div id=\"turntipRight\"><span class=\"tipPercentGrey\">"  + d.Option3 + "%</span></div></div>")});      
+            tipStack3 = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,z) { return ("<div id=\"priorityTip\"><div id=\"turntipLeft\"><span class=\"tipFeature\">" + PollChoices[z] + "</span></div><div id=\"turntipRight\"><span class=\"tipPercentGrey\">"  + d.Option4 + "%</span></div></div>")});
+            tipStack4 = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,z) { return ("<div id=\"priorityTip\"><div id=\"turntipLeft\"><span class=\"tipFeature\">" + PollChoices[z] + "</span></div><div id=\"turntipRight\"><span class=\"tipPercentGrey\">"  + d.Option5 + "%</span></div></div>")});
+                      
+            a2 = barStack.select(".bar1") 
+
+            a2.call(tipStack0);
+
+            a2.attr("fill","#cbc9e2").transition().duration(1000).attr("x", "1")
+                .attr("y","20").attr("width",function(d){return scale(d.Option1)}).attr("height","20px");
+
+            a2.on("mouseover", function(d,i){
+                tipStack0.show(d,0); 
+                d3.select(this).style("fill-opacity",.7)
+            })
+
+            a2.on("mouseout", function(){tipStack0.hide()})
+
+            b2 = barStack.select(".bar2")
 
 
-    var dataCSVf = dataCSV.filter(function(d){return d.state == stateAb});
-    //console.log(dataCSVf[2]);
+            b2.call(tipStack1);
+
+            b2.attr("fill","#7d77b7").transition().duration(1000).attr("x", function(d){ return (1 + scale(d.Option1))})
+                .attr("y","20").attr("width",function(d){return scale(d.Option2)}).attr("height","20px");
+
+            b2.on("mouseover", function(d,i){
+                tipStack1.show(d,1); 
+                d3.select(this).style("fill-opacity",.7)
+            })
+
+
+            b2.on("mouseout", function(){tipStack1.hide()})
+
+            c2 = barStack.select(".bar3")
+
+
+            c2.call(tipStack2);
+
+            c2.attr("fill","#b1add4").transition().duration(1000).attr("x", function(d){ return (1 + scale(d.Option2) + scale(d.Option1))})
+                .attr("y","20").attr("width",function(d){return scale(d.Option3)}).attr("height","20px");
+
+            c2.on("mouseover", function(d,i){
+                tipStack2.show(d,2); 
+                d3.select(this).style("fill-opacity",.7)
+            })
+
+            c2.on("mouseout", function(){tipStack2.hide()})
+
+            d2 = barStack.select(".bar4")
+
+
+            d2.call(tipStack3);
+
+            d2.attr("fill","#5e5989").transition().duration(1000).attr("x", function(d){ return (1 + scale(d.Option3) + scale(d.Option2) + scale(d.Option1))})
+                .attr("y","20").attr("width",function(d){return scale(d.Option4)}).attr("height","20px");
+
+            d2.on("mouseover", function(d,i){
+                tipStack3.show(d,3); 
+                d3.select(this).style("fill-opacity",.7)
+            })
+
+            d2.on("mouseout", function(){tipStack3.hide()})
+
+            e2 = barStack.select(".bar5")
+
+
+            e2.call(tipStack4);
+
+            e2.attr("fill","#555").transition().duration(1000).attr("x", function(d){ return (1 + scale(d.Option4) + scale(d.Option3) + scale(d.Option2) + scale(d.Option1))})
+                .attr("y","20").attr("width",function(d){return scale(d.Option5)}).attr("height","20px");
+
+            e2.on("mouseover", function(d,i){
+                tipStack4.show(d,4); 
+                d3.select(this).style("fill-opacity",.7)
+            })
+
+
+            e2.on("mouseout", function(){tipStack4.hide()})
+
+            barStack.exit().remove()
+        })
+        
+    })();
 
     //make the results area
     (function updateResults(){
@@ -380,9 +507,15 @@ function updateState(stateChoice){
             barsEnter.append("rect");
             barsEnter.append("text").attr("class","barResultsT");
             barsEnter.append("text").attr("class","barResultsT2");
+            barsEnter.append("text").attr("class","barResultsT3");
 
             if (winningParty == "D") {var senDT = "✓ " + senD; var senRT = senR; } else { var senRT = "✓ " + senR; var senDT = senD;}
           
+            d = bar.select(".barResultsT3")
+            d.attr("y",150)
+                .attr("x",2)
+                .text('As of 6:00 p.m. EDT on Nov. 5, 2014')
+
             c = bar.select(".barResultsT2")
             c.attr("text-anchor","end").transition().duration(1000).attr("x", function(d) { return offsetBar - 5; })
                 .attr("y",function(d,i){return (i*barHeight) + (5*(i+1)) + 25 +(barHeight/2)})
@@ -392,7 +525,8 @@ function updateState(stateChoice){
             b = bar.select("rect").attr("class","barResults");
             b.attr("fill",function(d){
                     if(d.candidate == "D"){return "#004d99"}
-                    else{return "#ae1e37"}
+                    else if(d.candidate == "I"){return "#ee9200"}
+                    else {return "#ae1e37"}
                 })
             b.transition().duration(1000)
                 .attr("width", function(d) { return x(d.D); }).attr("height", barHeight - 1)
@@ -413,16 +547,15 @@ function updateState(stateChoice){
             stateChoiceT = stateChoice;
             if (stateChoiceT == "Carolina") {stateChoiceT = "North Carolina";}
 
-            turnouthead.html("<h2>" + stateChoiceT + " Turnout Highlights</h2>");
-            turnoutboxl.html("<p>" + turnoutText[stateChoice] + turnoutText[stateChoice] + "</p>");
-            //key1boxl.html("<h2>Women</h2>" + "<h3>" + keyText1[stateChoice] + "</h3>");
-            //key2boxl.html("<h2>Seniors</h2>" + "<h3>" + keyText1[stateChoice] + "</h3>");
+        key1head.html("<H2>" + stateChoiceT + ": Which issue is the most important facing the country?</h2>");
+
+            turnoutboxl.html("<h2>" + stateChoiceT + ": Then and now</h2><p>" + turnoutText[stateChoice] + "</p>");
 
             turnoutdata = turnoutdata.filter(function(d){return d.State == stateChoice;})
 
             x = d3.scale.linear()
                 .range([0,40]);
-            x.domain([5, 90]);
+            x.domain([-2, 90]);
 
             circle = svgTurnout.selectAll("g")
                 .data(turnoutdata, function(d){return d.Poll});
@@ -450,83 +583,97 @@ function updateState(stateChoice){
 
             e.attr("text-anchor","middle")
                 .attr("x",function(d,i){return (turnoutLeftPad + offsetCircle2014) + (i * turnoutSpacing)})
-                .attr("y",function(d) { return 250; })
+                .attr("y",function(d) { return 260; })
                 .text('2014')
 
             f.attr("text-anchor","middle")
                 .attr("x",function(d,i){return (turnoutLeftPad) + (i * turnoutSpacing)})
-                .attr("y",function(d) { return 250; })
-                .text('2010')
+                .attr("y",function(d) { return 260; })
+                .text(pollYear[stateChoice])
 
             g.attr("text-anchor","middle")
                 .attr("x",function(d,i){return (turnoutLeftPad + (offsetCircle2014/2)) + (i * turnoutSpacing)})
-                .attr("y",function(d) { return 118; })
+                .attr("y",function(d) { return 138; })
                 .text(function(d,i){ return Poll1Names[stateChoice][i]})
 
-            tipTa = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">2010</span></div><div id=\"tip2BottomM\"><span class=\"tipCanNameD\">" + senDLast + " (D)</span><br><span class=\"tipCanNameR\">" + senRLast + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"tipPctD\">TK</span><br><span class=\"tipPctR\">TK</span></div></div></div>")});
+            tipTa = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { 
+            return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT2010[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">" + pollYear[stateChoice] +"</span></div><div id=\"tip2BottomM\"><span class=\"tipCanNameD\">" + d.OffYearNameD + " (D)</span><br><span class=\"tipCanNameR\">" + d.OffYearNameR + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"tipPctD\">"+d.ValueR2010+"%</span><br><span class=\"tipPctR\">"+ d.ValueD2010 +"%</span></div></div></div>")});
                 
             a.call(tipTa);
 
-            a.attr("stroke-width","4").attr("stroke","#004d99").attr("stroke-opacity",".6").attr("fill","#4e4e4e").attr("fill-opacity","0")
+            d10Fill = "#002e5b";
+            d14Fill = "#004d99";
+
+            stateChoice == "Kansas" ? d10Fill = "#002e5b" : d10Fill = "#002e5b";
+            stateChoice == "Kansas" ? d14Fill = "#ee9200" : d14Fill = "#004d99";
+
+            a.attr("stroke-width","6").attr("stroke",d10Fill).attr("stroke-opacity","1").attr("fill",d10Fill).attr("fill-opacity","0")
             a.transition().duration(1000)
                 .attr("r", function(d) { return x(d.ValueD2010); })
-                .attr("cy",function(d) { return 180; })
+                .attr("cy",function(d) { return 195; })
                 .attr("cx",function(d,i){return (turnoutLeftPad + (i * turnoutSpacing)) });
 
 
             a.on("mouseover", function(d,i){
                 tipTa.show(d,i); 
-                d3.select(this).style("fill-opacity",.4)})
+                d3.select(this).style("fill-opacity",1)})
             a.on("mouseout", function(d){
                 tipTa.hide(d); 
                 d3.select(this).style("fill-opacity",0)})
 
-            tipTb = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">2010</span></div><div id=\"tip2BottomM\"><span class=\"tipCanNameD\">" + senDLast + " (D)</span><br><span class=\"tipCanNameR\">" + senRLast + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"tipPctD\">TK</span><br><span class=\"tipPctR\">TK</span></div></div></div>")});
+            tipTb = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { 
+            return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT2010[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">"+ pollYear[stateChoice] +"</span></div><div id=\"tip2BottomM\"><span class=\"" + tipNameSpan + "\">" + d.OffYearNameD + " (D)</span><br><span class=\"tipCanNameR\">" + d.OffYearNameR + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"" + tipPctSpan + "\">"+d.ValueR2010+"%</span><br><span class=\"tipPctR\">"+d.ValueD2010+"%</span></div></div></div>")});
+                
             b.call(tipTb);
 
-            b.attr("stroke-width","4").attr("stroke","#ae1e37").attr("stroke-opacity",".6").attr("fill","#4e4e4e").attr("fill-opacity","0")
+            b.attr("stroke-width","6").attr("stroke","#6d1322").attr("stroke-opacity","1").attr("fill","#6d1322").attr("fill-opacity","0")
             b.transition().duration(1000)
                 .attr("r", function(d) { return x(d.ValueR2010); })
-                .attr("cy",function(d) { return 45; })
+                .attr("cy",function(d) { return 60; })
                 .attr("cx",function(d,i){return (turnoutLeftPad + (i * turnoutSpacing)) });
 
             b.on("mouseover", function(d,i){
                 tipTb.show(d,i); 
-                d3.select(this).style("fill-opacity",.4)})
+                d3.select(this).style("fill-opacity",1)
+            })
             b.on("mouseout", function(d){
                 tipTb.hide(d); 
-                d3.select(this).style("fill-opacity",0)})
+                d3.select(this).style("fill-opacity",0)
+            })
 
-            tipTc = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">2014</span></div><div id=\"tip2BottomM\"><span class=\"tipCanNameD\">" + senDLast + " (D)</span><br><span class=\"tipCanNameR\">" + senRLast + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"tipPctD\">TK</span><br><span class=\"tipPctR\">TK</span></div></div></div>")});
+            
+            tipTc = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT2014[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">2014</span></div><div id=\"tip2BottomM\"><span class=\"" + tipNameSpan + "\">" + senDLast + " (D)</span><br><span class=\"tipCanNameR\">" + senRLast + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"" + tipPctSpan + "\">"+d.ValueD2014+"%</span><br><span class=\"tipPctR\">"+d.ValueR2014+"%</span></div></div></div>")});
+                
             c.call(tipTc);
 
-            c.attr("stroke-width","4").attr("stroke","#004d99").attr("stroke-opacity",".9").attr("fill","#4e4e4e").attr("fill-opacity","0")
+            c.attr("stroke-width","6").attr("stroke",d14Fill).attr("stroke-opacity","1").attr("fill",d14Fill).attr("fill-opacity","0")
             c.transition().duration(1000)
                 .attr("r", function(d) { return x(d.ValueD2014); })
-                .attr("cy",function(d) { return 180; })
+                .attr("cy",function(d) { return 195; })
                 .attr("cx",function(d,i){return ((turnoutLeftPad + offsetCircle2014) + (i * turnoutSpacing)) });
 
             c.on("mouseover", function(d,i){
                 tipTc.show(d,i); 
-                d3.select(this).style("fill-opacity",.4)})
+                d3.select(this).style("fill-opacity",1)})
             c.on("mouseout", function(d){
                 tipTc.hide(d); 
                 d3.select(this).style("fill-opacity",0)})
 
-
-            tipTd = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">2014</span></div><div id=\"tip2BottomM\"><span class=\"tipCanNameD\">" + senDLast + " (D)</span><br><span class=\"tipCanNameR\">" + senRLast + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"tipPctD\">TK</span><br><span class=\"tipPctR\">TK</span></div></div></div>")});
+            
+            tipTd = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d,i) { return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + Poll1Names[stateChoice][i] + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">" + InT2014[stateChoice][i]+ "% of total</span></div></div><div id=\"tipBottom\"><div id=\"tip2BottomL\"><span class=\"tipYear\">2014</span></div><div id=\"tip2BottomM\"><span class=\"" + tipNameSpan + "\">" + senDLast + " (D)</span><br><span class=\"tipCanNameR\">" + senRLast + " (R) </span></div><div id=\"tip2BottomR\"><span class=\"" + tipPctSpan + "\">"+d.ValueD2014+"%</span><br><span class=\"tipPctR\">"+d.ValueR2014+"%</span></div></div></div>")});
+                
             d.call(tipTd);
 
 
-            d.attr("stroke-width","4").attr("stroke","#ae1e37").attr("stroke-opacity",".9").attr("fill","#4e4e4e").attr("fill-opacity","0")
+            d.attr("stroke-width","6").attr("stroke","#ae1e37").attr("stroke-opacity","1").attr("fill","#ae1e37").attr("fill-opacity","0")
             d.transition().duration(1000)
                 .attr("r", function(d) { return x(d.ValueR2014);})
-                .attr("cy",function(d,i){ return 45;})
+                .attr("cy",function(d,i){ return 60;})
                 .attr("cx",function(d,i){return ((turnoutLeftPad + offsetCircle2014) + (i * turnoutSpacing)) });
 
             d.on("mouseover", function(d,i){
                 tipTd.show(d,i); 
-                d3.select(this).style("fill-opacity",.4)})
+                d3.select(this).style("fill-opacity",1)})
             d.on("mouseout", function(d){
                     tipTd.hide(d); 
                 d3.select(this).style("fill-opacity",0)})
@@ -548,6 +695,13 @@ function updateState(stateChoice){
     //draw the map
     d3.json(filePath, function (error, state) {
 
+
+        if (stateChoice == 'Georgia') {  featurePath = state.objects.georgia;}
+            else if (stateChoice == 'Carolina') {  featurePath = state.objects.carolina;}
+            else if (stateChoice == 'Iowa') {featurePath = state.objects.iowa; }
+            else if (stateChoice == 'Kansas') { featurePath = state.objects.kansas; }
+            else if (stateChoice == 'Kentucky') { featurePath = state.objects.kentucky; }
+
         var rotationA = rotate1[stateChoice];
         var rotationB = rotate2[stateChoice];
         var rotation = [rotationA,rotationB]
@@ -559,24 +713,22 @@ function updateState(stateChoice){
         var path = d3.geo.path()
             .projection(projection);
 
-        if (stateChoice == 'Georgia') { featurePath = state.objects.georgia}
-            else if (stateChoice == 'Carolina') { featurePath = state.objects.carolina}
-            else if (stateChoice == 'Iowa') {featurePath = state.objects.iowa; }
-            else if (stateChoice == 'Kansas') {featurePath = state.objects.kansas; }
-            else if (stateChoice == 'Kentucky') {featurePath = state.objects.kentucky; }
-
         var dMin = 0;
         var dMax = 0;
 
         var data = state;
 
         var quantizeR = d3.scale.quantize()
-            .domain([0, 250])
+            .domain([.4, 1])
             .range(d3.range(9).map(function(i) { return "r" + i + "-9"; }));
 
         var quantizeD = d3.scale.quantize()
-            .domain([0, 250])
-            .range(d3.range(9).map(function(i) { return "d" + i + "-9"; }));
+            .domain([.4, 1])
+            .range(d3.range(9).map(function(i) { if(stateChoice != "Kansas"){return "d" + i + "-9";} else{ return "i" + i + "-9"; } }));
+
+        var quantizeI = d3.scale.quantize()
+            .domain([.4, 1])
+            .range(d3.range(9).map(function(i) { return "i" + i + "-9"; }));
 
         var st = topojson.feature(state, featurePath);
 
@@ -586,23 +738,24 @@ function updateState(stateChoice){
 
         projection.scale(s).translate(t);
 
-        tipM = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d) { return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + d.properties["NAMELSAD"]).toLocaleString() + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">"+In+"% in</span></div></div><div id=\"tipBottom\"><div id=\"tipBottomL\"><span class=\"tipCanNameD\">" + starD + senD + " (D)</span><br><span class=\"tipCanNameR\">" + starR + senR + " (R) </span>" + "</div><div id=\"tipBottomR\"><span class=\"tipPctD\">" + DP + "%</span><br><span class=\"tipPctR\">" + RP + "%</span></div></div>";});
+        tipM = d3.tip().attr('class', 'd3-tip').offset([-10, 0]).html(function(d) { var county = d.properties["NAME"]; starD = ""; starR = "";
+            nestedByState.get(county)[0]['dp'] > nestedByState.get(county)[0]['rp'] ? starD = "✓ " : starR = "✓ ";
+            return ("<div id=\"countyTip\"><div id=\"tipTop\"><div id=\"tipTopL\"><span class=\"tipFeature\">" + d.properties["NAMELSAD"]).toLocaleString() + "</span></div><div id=\"tipTopR\"><span class=\"tipSample\">"+nestedByState.get(county)[0]['p']+"% in</span></div></div><div id=\"tipBottom\"><div id=\"tipBottomL\"><span class=\"" + tipNameSpan + "\">" + starD + senD + " (D)</span><br><span class=\"tipCanNameR\">" + starR + senR + " (R) </span>" + "</div><div id=\"tipBottomR\"><span class=\"" + tipPctSpan + "\">" + (100*nestedByState.get(county)[0]['dp']).toFixed(1) + "%</span><br><span class=\"tipPctR\">" + (100*nestedByState.get(county)[0]['rp']).toFixed(1) + "%</span></div></div>";});
                 
         svg.selectAll("path").remove();
 
-        // each county color must be computed by its scale from 35 to 65. color will be determined based on the winner.
+        // each county color must be computed by its scale from 40 and up. color will be determined based on the winner.
         // winner will be computed by comparing percents of d and r
         // 
-
-        /*var countries = d3.nest()
-            .key(function(d) { return d.county; })
-            .map(data, d3.map)
-            .keys(); */
 
         map = svg.selectAll(".counties").data(topojson.feature(state, featurePath).features);
 
         map.enter().append("path")
-            .attr("d", path).attr("class", function(d) { return quantizeR(d.properties["COUNTYFP"]) } ).attr("fill-opacity",".5").attr("stroke-opacity",.3);
+            .attr("d", path).attr("class", function(d) {  var which; var county = d.properties["NAME"]; 
+               nestedByState.get(county)[0]['rp'] > nestedByState.get(county)[0]['dp'] ? which = 'r' : which = 'd';
+               if (which == 'r') { return quantizeR(nestedByState.get(county)[0]['rp']) } else {return quantizeD(nestedByState.get(county)[0]['dp'])}
+           })
+            .attr("fill-opacity",".5").attr("stroke-opacity",.3);
 
         map.call(tipM);
 
@@ -627,36 +780,24 @@ function updateState(stateChoice){
                 
     });
 
-    //update keypoints
-    (function updateKeyPoints() {
-        
-        //remove the previous charts
-
-        // create two selections
-
-        d3.csv("./data/keypoints.csv", function(keyDataset) {
-
-            keyDataset = keyDataset.filter(function(d){return d.state == stateChoice}); // filter that b to the state.
-            keyData1 = keyDataset.filter(function(d){return d.key1a !== ""});//filter that b to key1
-            keyData2 = keyDataset.filter(function(d){return d.key2a !== null});;// filter that b to key2
-            
-            //d3.selectAll("#chart1").remove();
-            //d3.selectAll("#chart2").remove();
-    
-            
-
-        });
-        
-    })();
 };
 
-queue()
-    .defer(d3.csv, "./data/senatex.csv")
-    .await(ready);
+/*queue()
+    .defer(d3.csv, "./data/senatex.csv", function(d){ 
+        rateByIdR.set(d.key, d.rp); 
+        rateByIdD.set(d.key,d.dp); 
+        rateByIdPct.set(d.key,d.p);
+    })
+    .await(ready);*/
     
-
-function ready(error, sen){
-    dataCSV = sen;
-    rateById.set(function(d){d.id, +d.rate});
+(function ready(){
+    /*dataCSV = sen;
+   
+   rateByIdR.set(d.key, d.rp); 
+        rateByIdD.set(d.key,d.dp); 
+        rateByIdPct.set(d.key,d.p);
+   console.log(rateByIdR.get('Adair'))
+   console.log(rateByIdD.get('Adair'))
+   console.log(rateByIdPct.get('Adair'))*/
     updateState('Kentucky');
-};
+})();

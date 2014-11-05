@@ -2,57 +2,57 @@
     "State":"Georgia",
     "type":"percent",
     "candidate":"D",
-    "D":"48.2"
+    "D":"45.3"
     },
     {
     "State":"Georgia",
     "type":"percent2",
     "candidate":"R",
-    "D":"45.2"
+    "D":"52.8"
     },
     {
     "State":"Kansas",
     "type":"percent",
-    "candidate":"D",
-    "D":"44.9"
+    "candidate":"I",
+    "D":"42.5"
     },
     {
     "State":"Kansas",
     "type":"percent2",
     "candidate":"R",
-    "D":"49.2"
+    "D":"53.3"
     },
     {"State":"Kentucky",
     "type":"percent",
     "candidate":"D",
-    "D":"43.2"
+    "D":"40.7"
     },
     {
     "State":"Kentucky",
     "type":"percent2",
     "candidate":"R",
-    "D":"55.2"
+    "D":"56.2"
     },
     {"State":"Iowa",
     "type":"percent",
     "candidate":"D",
-    "D":"43.2"
+    "D":"43.7"
     },
     {
     "State":"Iowa",
     "type":"percent2",
     "candidate":"R",
-    "D":"51.2"
+    "D":"52.2"
     },
     {"State":"Carolina",
     "type":"percent",
     "candidate":"D",
-    "D":"47.2"
+    "D":"47.3"
     },
     {
     "State":"Carolina",
     "type":"percent2",
     "candidate":"R",
-    "D":"42.2"
+    "D":"49.0"
     }
 ]
